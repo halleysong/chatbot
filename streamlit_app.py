@@ -34,7 +34,7 @@ from langchain_community.chat_message_histories import StreamlitChatMessageHisto
 
 def main():
     st.set_page_config(
-    page_title="Olive Young",
+    page_title="DXTECH",
     page_icon=":books:")
 
     st.title("_DXTECH :red[Q&A Chat]_ :books:")
