@@ -52,7 +52,7 @@ def main():
         uploaded_files =  st.file_uploader("Upload your file",type=['pdf','docx'],accept_multiple_files=True)
 
         ###openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
-        openai_api_key = "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"
+        openai_api_key = "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"
 
         process = st.button("Process")
     if process:
