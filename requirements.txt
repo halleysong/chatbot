@@ -4,3 +4,4 @@ tiktoken
 loguru
 langchain
 langchain_community
+pypdf
