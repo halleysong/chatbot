@@ -69,7 +69,7 @@ def main():
 
     if 'messages' not in st.session_state:
         st.session_state['messages'] = [{"role": "assistant", 
-                                        "content": "안녕하세요! DXTECH ChatBot입니다. 직원에대해서 궁금한 점을 질문하세요!"}]
+                                        "content": "안녕하세요! DXTECH ChatBot입니다. 직원에 대해서 궁금한 점을 질문하세요!"}]
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
@@ -78,7 +78,7 @@ def main():
     history = StreamlitChatMessageHistory(key="chat_messages")
 
     # Chat logic
-    if query := st.chat_input("질문을 입력해주세요. (질문 가능 내용 : 에) OOO  주량이 얼마나 되나요?, 현재 출장 중인 사람은 누구인가요?"):
+    if query := st.chat_input("질문을 입력해주세요. 예) OOO은 주량이 얼마나 되나요?, 현재 출장 중인 사람은 누구인가요?"):
         st.session_state.messages.append({"role": "user", "content": query})
 
         with st.chat_message("user"):
