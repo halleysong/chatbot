@@ -5,3 +5,4 @@ loguru
 langchain
 langchain_community
 pypdf
+sentence-transformers
